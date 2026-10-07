@@ -51,16 +51,8 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Action Button & Status */}
+        {/* Action Button */}
         <div className="hidden items-center gap-4 md:flex">
-          <div className="flex items-center gap-2 rounded-full border border-emerald/30 bg-emerald/10 px-3 py-1 text-xs font-medium text-emerald">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald"></span>
-            </span>
-            <span>All Systems Live</span>
-          </div>
-
           <a
             href="/#download"
             className="btn-primary rounded-xl px-5 py-2.5 text-sm font-semibold text-white shadow-sm"
