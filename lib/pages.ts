@@ -1,0 +1,13 @@
+// Starter text for the info pages. Override any page by adding a row with the same slug to the `pages` table.
+const E = "support@octovvpn.net";
+export const PAGES: Record<string, { title: string; body: string }> = {
+  privacy: { title: "Privacy policy", body: `Octo Tech Ltd operates OctoVVPN. This page explains what we collect and why.\n\nAccount data: your email address and plan details, so we can run your account.\n\nPayments: handled by our payment processor. We do not store full card numbers.\n\nConnection data: we process only the connection data needed to run and secure the service, such as applying data limits and detecting abuse, and keep it only as long as needed.\n\nWe do not sell your personal data.\n\nQuestions or requests: ${E}.` },
+  terms: { title: "Terms of service", body: `By using OctoVVPN you agree to these terms.\n\nUse the service lawfully. Do not use it for abuse, fraud, spam or any illegal activity. We may suspend accounts that do.\n\nYou are responsible for following the laws where you live. We cannot guarantee access on every network or in every country.\n\nThe service is provided as available. Plans, limits and prices are shown on our pricing section and may change with notice.\n\nContact: ${E}.` },
+  refunds: { title: "Refund policy", body: `All paid plans include a 30-day money-back guarantee.\n\nTo request a refund within 30 days of purchase, email ${E} from your account address. Refunds go back to your original payment method.\n\nThe free Stealth plan has nothing to refund.` },
+  cookies: { title: "Cookie policy", body: `We use essential cookies to run the site.\n\nYou can clear cookies at any time in your browser settings.` },
+  gdpr: { title: "GDPR and your rights", body: `If you are in the EU or UK you can ask us to access, correct, export or delete your personal data, and to restrict or object to how we use it.\n\nEmail ${E} from your account address. To delete your account, see our Delete account page.` },
+  about: { title: "About OctoVVPN", body: `OctoVVPN is built by Octo Tech Ltd. We make a VPN focused on privacy and on staying connected on difficult networks, with apps for Windows and Android.\n\nBe where you want to be.` },
+  contact: { title: "Contact", body: `Support and billing: ${E}\n\nInterested in becoming an affiliate? See our affiliates page.` },
+  status: { title: "Server status", body: `Live status of our server locations, refreshed every minute.` },
+  "delete-account": { title: "Delete your account", body: `To delete your account and its data, email ${E} from the address on your account with the subject "Delete account".\n\nWe process deletion requests within 30 days and confirm by email.` },
+};
