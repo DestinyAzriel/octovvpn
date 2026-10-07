@@ -12,12 +12,12 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Brand */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-blue/20 to-violet/20 p-1.5 ring-1 ring-blue/40 shadow-lg shadow-blue/10 transition-transform group-hover:scale-105">
+          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-lg shadow-blue/10 transition-transform group-hover:scale-105">
             <Image
-              src="/primary_logo.png"
+              src="/octovvpn_logo.png"
               alt="OctoVVPN Logo"
-              width={36}
-              height={36}
+              width={40}
+              height={40}
               className="object-contain"
               priority
             />

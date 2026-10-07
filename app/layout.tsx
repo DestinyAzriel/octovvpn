@@ -11,11 +11,16 @@ export const metadata: Metadata = {
   title: "OctoVVPN — Experience the Internet Without Borders",
   description:
     "Military-grade AES-256-GCM encryption, Shadowsocks, Obfs4 stealth obfuscation, and autonomous routing for restrictive networks. Download for Windows and Android.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/octovvpn_logo.png",
+  },
   verification: { google: "NDRPlLW37UfgDKTjBZqP2_ZuiKjs32QAY3Pg_rmQkA4" },
   other: {
     "trustpilot-one-time-domain-verification-id": "c38cf01e-6d44-4526-933b-b4f19cfbd194",
   },
 };
+
 
 const GROUPS: [string, [string, string][]][] = [
   [
@@ -65,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/" className="flex items-center gap-3">
                   <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-blue/20 p-1 ring-1 ring-blue/30">
                     <Image
-                      src="/primary_logo.png"
+                      src="/octovvpn_logo.png"
                       alt="OctoVVPN"
                       width={32}
                       height={32}
