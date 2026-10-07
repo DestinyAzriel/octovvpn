@@ -114,8 +114,8 @@ export default async function Home() {
               {/* Header bar */}
               <div className="flex items-center justify-between border-b border-line pb-4">
                 <div className="flex items-center gap-3">
-                  <div className="relative h-9 w-9 overflow-hidden rounded-xl bg-blue/15 p-1 ring-1 ring-blue/30">
-                    <Image src="/octovvpn_logo.png" alt="OctoVVPN" width={32} height={32} className="object-contain" />
+                  <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-blue/15 p-1 ring-1 ring-blue/30 shadow-md shadow-blue/10">
+                    <Image src="/octovvpn_logo.png" alt="OctoVVPN" width={44} height={44} className="h-full w-full object-contain" />
                   </div>
                   <div>
                     <p className="text-sm font-bold text-white">Live Connection State</p>

@@ -11,22 +11,22 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-line/40 bg-ink/80 backdrop-blur-md transition-all">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Brand */}
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-lg shadow-blue/10 transition-transform group-hover:scale-105">
+        <Link href="/" className="group flex items-center gap-3.5 sm:gap-4">
+          <div className="relative flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center overflow-hidden rounded-2xl shadow-xl shadow-blue/20 transition-transform group-hover:scale-105">
             <Image
               src="/octovvpn_logo.png"
               alt="OctoVVPN Logo"
-              width={40}
-              height={40}
-              className="object-contain"
+              width={64}
+              height={64}
+              className="h-full w-full object-contain"
               priority
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold tracking-tight text-white transition-colors group-hover:text-blue">
+            <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white transition-colors group-hover:text-blue">
               Octo<span className="text-blue">V</span>VPN
             </span>
-            <span className="hidden text-[10px] font-medium uppercase tracking-widest text-mute md:inline-block">
+            <span className="hidden text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-mute md:inline-block">
               Stealth Network
             </span>
           </div>

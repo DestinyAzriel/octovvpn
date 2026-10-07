@@ -67,17 +67,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid gap-10 md:grid-cols-5">
               {/* Brand Col */}
               <div className="md:col-span-2">
-                <Link href="/" className="flex items-center gap-3">
-                  <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-blue/20 p-1 ring-1 ring-blue/30">
+                <Link href="/" className="flex items-center gap-3.5">
+                  <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center overflow-hidden rounded-2xl bg-blue/20 p-1.5 ring-1 ring-blue/30 shadow-lg shadow-blue/10">
                     <Image
                       src="/octovvpn_logo.png"
                       alt="OctoVVPN"
-                      width={32}
-                      height={32}
-                      className="object-contain"
+                      width={56}
+                      height={56}
+                      className="h-full w-full object-contain"
                     />
                   </div>
-                  <span className="text-xl font-bold tracking-tight text-white">
+                  <span className="text-2xl font-bold tracking-tight text-white">
                     Octo<span className="text-blue">V</span>VPN
                   </span>
                 </Link>
