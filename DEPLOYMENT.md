@@ -19,7 +19,7 @@ This project is built with **Next.js 15 (App Router)** and connects directly to 
    - `SUPABASE_URL`: Your Supabase Project URL (`https://xyz.supabase.co`)
    - `SUPABASE_SERVICE_KEY`: Your Supabase Service Role Key
    - `NEXT_PUBLIC_PLAY_URL`: `https://play.google.com/store/apps/details?id=net.octovvpn.app`
-   - `NEXT_PUBLIC_WINDOWS_URL`: `/downloads/OCTOVVPN-Setup-v1.9.exe` *(or your external CDN installer link)*
+   - `NEXT_PUBLIC_WINDOWS_URL`: `/downloads/OctoVVPN-Windows-v1.7.exe` *(or your external CDN installer link)*
 5. Click **Deploy**. Vercel will build and assign you a URL (e.g., `octovvpn-site.vercel.app`).
 
 ---

@@ -4,7 +4,7 @@ import FaqSection from "@/components/FaqSection";
 import { getPlans, getServers, getFaqs, getQuotes } from "@/lib/data";
 
 const PLAY = process.env.NEXT_PUBLIC_PLAY_URL || "https://play.google.com/store/apps/details?id=net.octovvpn.app";
-const WIN = process.env.NEXT_PUBLIC_WINDOWS_URL || "/downloads/OCTOVVPN-Setup-v1.9.exe";
+const WIN = process.env.NEXT_PUBLIC_WINDOWS_URL || "/downloads/OctoVVPN-Windows-v1.7.exe";
 
 export const revalidate = 60;
 
@@ -66,7 +66,7 @@ export default async function Home() {
                   <path d="M0 3.449L9.75 2.1v9.451H0V3.449zm10.949-1.551L24 0v11.551H10.949V1.898zM0 12.451h9.75V21.9L0 20.551v-8.1zM10.949 12.451H24V24l-13.051-1.898V12.451z" />
                 </svg>
                 <span>Download for Windows</span>
-                <span className="rounded-md bg-white/20 px-1.5 py-0.5 text-[11px] font-mono">v1.9</span>
+                <span className="rounded-md bg-white/20 px-1.5 py-0.5 text-[11px] font-mono">v1.7</span>
               </a>
 
               <a
@@ -426,7 +426,7 @@ export default async function Home() {
                     </div>
                   </div>
                   <span className="rounded-full bg-blue/10 px-3 py-1 text-xs font-mono font-semibold text-blue border border-blue/20">
-                    v1.9
+                    v1.7
                   </span>
                 </div>
                 <p className="mt-4 text-sm text-mute-light leading-relaxed">
