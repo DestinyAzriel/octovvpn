@@ -18,7 +18,7 @@ insert into faqs (sort,q,a) values
  (3,'What devices are supported?','Windows and Android today. More platforms are planned.'),
  (4,'Is there a free trial?','Yes. Stealth is free for 7 days with 1 device, 3 regions and 10 GB per month.'),
  (5,'What is your refund policy?','All paid plans have a 30-day money-back guarantee.'),
- (6,'How do I contact support?','Email support@octovvpn.net.');
+ (6,'How do I contact support?','Email support@octovvpn.com.');
 -- Optional: override any info page (slugs: privacy, terms, refunds, cookies, gdpr, about, contact, status, delete-account). Separate paragraphs with a blank line.
 create table pages (slug text primary key, title text, body text, published bool default true);
 alter table pages enable row level security;

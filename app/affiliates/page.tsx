@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AffiliateForm from "@/components/AffiliateForm";
 
 export const metadata = {
@@ -8,19 +7,7 @@ export const metadata = {
 
 export default function Affiliates() {
   return (
-    <main className="relative mx-auto max-w-4xl px-6 py-16 md:py-24">
-      {/* Back button */}
-      <div className="mb-8">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-mute hover:text-white transition-colors"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Home
-        </Link>
-      </div>
+    <main className="relative mx-auto max-w-4xl px-6 pt-6 pb-16 md:pt-10 md:pb-24">
 
       <div className="text-center md:text-left">
         <span className="rounded-full border border-blue/30 bg-blue/10 px-3.5 py-1 text-xs font-semibold text-blue">

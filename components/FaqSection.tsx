@@ -22,7 +22,7 @@ const DEFAULT_FAQS: Faq[] = [
   },
   {
     q: "What is your refund policy?",
-    a: "All paid plans come with a hassle-free 30-day money-back guarantee. If you are not satisfied for any reason, email support@octovvpn.net within 30 days for a full refund.",
+    a: "All paid plans come with a hassle-free 30-day money-back guarantee. If you are not satisfied for any reason, email support@octovvpn.com within 30 days for a full refund.",
   },
   {
     q: "Do you keep logs of my browsing activity?",
