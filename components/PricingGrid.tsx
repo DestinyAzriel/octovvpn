@@ -84,16 +84,18 @@ export default function PricingGrid({ plans }: { plans: Plan[] }) {
 
                 <div className="mt-6 flex items-baseline gap-1">
                   <span className="text-4xl font-extrabold tracking-tight text-white">
-                    ${price.toFixed(2)}
+                    {p.price === 0 ? "$1" : `$${price.toFixed(2)}`}
                   </span>
-                  <span className="text-sm font-medium text-mute">/month</span>
+                  <span className="text-sm font-medium text-mute">
+                    {p.price === 0 ? "card fee" : "/month"}
+                  </span>
                 </div>
 
                 <div className="mt-1 h-5 text-xs text-mute">
                   {yearly && p.price > 0 ? (
                     <span className="text-emerald">Billed ${ (price * 12).toFixed(2) } annually</span>
                   ) : p.price === 0 ? (
-                    <span>Free forever</span>
+                    <span className="font-medium text-cyan">Valid for 7 days</span>
                   ) : (
                     <span>Standard monthly cycle</span>
                   )}
@@ -132,7 +134,7 @@ export default function PricingGrid({ plans }: { plans: Plan[] }) {
                       : "btn-secondary text-white hover:text-white"
                   }`}
                 >
-                  {p.price === 0 ? "Start Free Now" : "Choose " + p.name}
+                  {p.price === 0 ? "Start 7-Day Trial" : "Choose " + p.name}
                 </a>
               </div>
             </div>

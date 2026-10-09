@@ -19,7 +19,7 @@ async function list<T>(table: string, fallback: T[]): Promise<T[]> {
 }
 
 const PLANS: Plan[] = [
-  { name: "Stealth", price: 0, badge: null, features: ["1 device", "3 regions", "10 GB per month", "Basic encryption"] },
+  { name: "Stealth", price: 0, badge: null, features: ["Valid for 7 days", "$1 card confirmation fee", "1 device connection", "3 server regions", "10 GB data transfer", "Stealth obfuscation"] },
   { name: "Phantom", price: 6.99, badge: null, features: ["3 devices", "All 4 regions", "100 GB per month", "Kill switch", "Ad blocker"] },
   { name: "Specter", price: 12.99, badge: "Most popular", features: ["6 devices", "Priority on all regions", "Unlimited data", "Smart region select", "Full security suite"] },
   { name: "Elite", price: 24.99, badge: "Best value", features: ["Unlimited devices", "Dedicated node option", "Unlimited bandwidth", "24/7 live chat", "Dedicated manager"] },

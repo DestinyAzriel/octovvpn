@@ -88,7 +88,7 @@ export default async function Home() {
                 <svg className="h-4 w-4 text-emerald" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
                 </svg>
-                Free Stealth plan included
+                7-day Stealth trial ($1 card fee)
               </span>
               <span className="flex items-center gap-1.5">
                 <svg className="h-4 w-4 text-emerald" viewBox="0 0 20 20" fill="currentColor">
@@ -390,7 +390,7 @@ export default async function Home() {
             Choose Your Protection Level
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-mute">
-            Get started for free or unlock unlimited bandwidth and priority nodes. All paid subscriptions include our 30-day money-back guarantee.
+            Activate your 7-day Stealth trial ($1 card verification fee) or unlock unlimited bandwidth with priority nodes. All paid subscriptions include our 30-day money-back guarantee.
           </p>
         </div>
 
@@ -405,7 +405,7 @@ export default async function Home() {
               Get Started with OctoVVPN Today
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-mute">
-              Available now on Windows and Android. Create your free account right inside the client application.
+              Available now on Windows and Android. Create your account and activate your 7-day trial right inside the client application.
             </p>
           </div>
 

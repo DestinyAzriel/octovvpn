@@ -10,15 +10,15 @@ const DEFAULT_FAQS: Faq[] = [
   },
   {
     q: "How do I get started?",
-    a: "Download the Windows or Android app, create a free account, and immediately start browsing with our Stealth plan. No payment information or personal details required.",
+    a: "Download the Windows or Android app, create an account, and activate your 7-day Stealth trial with a $1 card confirmation fee to immediately start browsing with obfuscated protection.",
   },
   {
     q: "What devices and platforms are currently supported?",
     a: "We officially support Windows (10 and 11, 64-bit) and Android devices through Google Play. Native macOS, iOS, and Linux applications are in active development.",
   },
   {
-    q: "Is there a completely free tier?",
-    a: "Yes! Our Stealth plan is free to use with 10 GB of high-speed data every month across 3 server regions, including full encryption protection.",
+    q: "Is there a free trial?",
+    a: "Yes! The Stealth plan provides 7 days of access with 10 GB of high-speed data across 3 server regions, including full encryption protection. To prevent abuse and ensure genuine accounts, activating the 7-day trial incurs a standard $1 card confirmation fee.",
   },
   {
     q: "What is your refund policy?",
