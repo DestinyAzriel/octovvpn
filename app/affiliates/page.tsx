@@ -1,11 +1,10 @@
 import Link from "next/link";
+import AffiliateForm from "@/components/AffiliateForm";
 
 export const metadata = {
   title: "Affiliate & Partner Program — OctoVVPN",
   description: "Monetize your audience by partnering with OctoVVPN. Competitive rev-share commissions, marketing collateral, and dedicated manager.",
 };
-
-const EMAIL = "Zorse@phonekiss.onmicrosoft.com";
 
 export default function Affiliates() {
   return (
@@ -14,7 +13,7 @@ export default function Affiliates() {
       <div className="mb-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-mute hover:text-white"
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-mute hover:text-white transition-colors"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -67,36 +66,53 @@ export default function Affiliates() {
           </div>
           <h3 className="mt-4 text-base font-bold text-white">Prompt Payouts</h3>
           <p className="mt-2 text-sm text-mute leading-relaxed">
-            Reliable monthly payouts directly to your preferred bank account, crypto, or PayPal.
+            Reliable monthly payouts directly via crypto (USDT/BTC), bank wire, or PayPal.
           </p>
         </div>
       </div>
 
-      {/* Application CTA Card */}
-      <div className="mt-12 rounded-3xl border border-line-bright/60 bg-card p-8 md:p-10 shadow-xl">
-        <h2 className="text-2xl font-bold text-white">Submit Your Partnership Request</h2>
-        <p className="mt-3 text-sm text-mute leading-relaxed">
-          Tell us about your audience, publication, YouTube channel, blog, or community size. Our team will review your enquiry and provide customized trackable links within 24–48 hours.
-        </p>
+      {/* Program Highlights Banner */}
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-line bg-card/40 px-6 py-4 text-xs text-mute">
+        <div className="flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-cyan"></span>
+          <span><strong className="text-white">30-Day</strong> Tracking Cookie</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-blue"></span>
+          <span><strong className="text-white">Real-Time</strong> Conversion Analytics</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-emerald"></span>
+          <span><strong className="text-white">Dedicated</strong> Partner Manager</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-violet"></span>
+          <span><strong className="text-white">Custom Promo</strong> Codes &amp; Assets</span>
+        </div>
+      </div>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a
-            href={`mailto:${EMAIL}?subject=OctoVVPN%20Affiliate%20Partnership%20Application`}
-            className="btn-primary flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span>Email Partnership Team ({EMAIL})</span>
-          </a>
+      {/* Application Form Card */}
+      <div className="mt-10 rounded-3xl border border-line-bright/60 bg-card p-8 md:p-10 shadow-2xl">
+        <div className="mb-8">
+          <span className="rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-cyan">
+            Direct Application
+          </span>
+          <h2 className="mt-3 text-2xl font-bold text-white md:text-3xl">Apply for Affiliate Partnership</h2>
+          <p className="mt-2 text-sm text-mute leading-relaxed">
+            Fill in your platform details below. Our partnership team reviews applications directly and sets up your unique tracking links within 24–48 hours.
+          </p>
         </div>
 
-        <div className="mt-8 border-t border-line/50 pt-6">
+        {/* Embedded Formspree Form */}
+        <AffiliateForm />
+
+        {/* Partnership Guidelines */}
+        <div className="mt-10 border-t border-line/60 pt-6">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-mute">Partnership Principles &amp; Guidelines</h4>
           <ul className="mt-3 space-y-2 text-xs text-mute-light list-disc pl-5">
-            <li>Accurate representations only: No claims of guaranteed bypass without disclaimers, and no fake-review claims.</li>
-            <li>Zero tolerance for spam, unconsented email blasts, or brand bidding on OctoVVPN search keywords.</li>
-            <li>Transparent cookie attribution window (30-day tracking cookie).</li>
+            <li>Accurate representations only: No claims of guaranteed censorship bypass without technical disclaimers, and no fabricated user reviews.</li>
+            <li>Zero tolerance for spam, unconsented email blasts, or search engine bidding on OctoVVPN brand keywords.</li>
+            <li>Transparent cookie attribution window (30-day cookie persistence on all referral traffic).</li>
           </ul>
         </div>
       </div>
