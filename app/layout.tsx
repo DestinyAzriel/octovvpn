@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   description:
     "Military-grade AES-256-GCM encryption, Shadowsocks, Obfs4 stealth obfuscation, and autonomous routing for restrictive networks. Download for Windows and Android.",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.svg",
     apple: "/octovvpn_logo.png",
   },
   verification: { google: "NDRPlLW37UfgDKTjBZqP2_ZuiKjs32QAY3Pg_rmQkA4" },
