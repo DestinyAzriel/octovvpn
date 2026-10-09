@@ -101,6 +101,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     Zero Logs
                   </span>
                 </div>
+
+                {/* ConnectAmericas Verified Badge */}
+                <div className="mt-6">
+                  <a
+                    href="https://connectamericas.com/company/octotech-limited"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="OCTOTECH LIMITED — Verified on ConnectAmericas"
+                  >
+                    <img
+                      src="https://connectamericas.com/sites/default/files/content-idb/verifiedbadge.png"
+                      alt="ConnectAmericas Verified Company — OCTOTECH LIMITED"
+                      className="h-12 w-auto opacity-90 transition-opacity hover:opacity-100"
+                    />
+                  </a>
+                </div>
               </div>
 
               {/* Links Groups */}
