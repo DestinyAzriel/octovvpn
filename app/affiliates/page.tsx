@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Affiliates() {
   return (
-    <main className="relative mx-auto max-w-4xl px-6 pt-6 pb-16 md:pt-10 md:pb-24">
+    <main className="relative mx-auto max-w-4xl px-6 pt-2 pb-16 md:pt-4 md:pb-24">
 
       <div className="text-center md:text-left">
         <span className="rounded-full border border-blue/30 bg-blue/10 px-3.5 py-1 text-xs font-semibold text-blue">

@@ -49,7 +49,7 @@ export default async function InfoPage({ params }: P) {
   const servers = slug === "status" ? await getServers() : null;
 
   return (
-    <main className="relative mx-auto max-w-4xl px-6 pt-6 pb-16 md:pt-10 md:pb-24">
+    <main className="relative mx-auto max-w-4xl px-6 pt-2 pb-16 md:pt-4 md:pb-24">
       <div className="rounded-3xl border border-line-bright/50 bg-card/80 p-8 md:p-12 shadow-2xl backdrop-blur-xl">
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line/60 pb-6">
