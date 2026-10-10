@@ -53,16 +53,41 @@ function formatParagraph(text: string) {
   });
 }
 
+export async function generateStaticParams() {
+  return Object.keys(PAGES).map((slug) => ({ slug }));
+}
+
 export default async function InfoPage({ params }: P) {
   const { slug } = await params;
   let p: { title: string; body: string } | undefined = PAGES[slug];
   if (!p) notFound();
 
-  const { data } =
-    (await db()?.from("pages").select("title,body").eq("slug", slug).eq("published", true).maybeSingle()) ?? {};
-  if (data) p = data;
+  try {
+    const client = db();
+    if (client) {
+      const result = await Promise.race([
+        client.from("pages").select("title,body").eq("slug", slug).eq("published", true).maybeSingle(),
+        new Promise<null>((resolve) => setTimeout(() => resolve(null), 1500)),
+      ]);
+      if (result && "data" in result && result.data) {
+        p = result.data;
+      }
+    }
+  } catch {
+    // Fallback to local PAGES starter text
+  }
 
-  const servers = slug === "status" ? await getServers() : null;
+  let servers = null;
+  if (slug === "status") {
+    try {
+      servers = await Promise.race([
+        getServers(),
+        new Promise<null>((resolve) => setTimeout(() => resolve(null), 1500)),
+      ]);
+    } catch {
+      servers = null;
+    }
+  }
 
   return (
     <main className="relative mx-auto max-w-4xl px-6 pt-2 pb-16 md:pt-4 md:pb-24">
