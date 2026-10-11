@@ -4,6 +4,7 @@ import { Sora } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
 
@@ -199,6 +200,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
